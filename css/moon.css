@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+/***********************************
+		REFERENCES
+font-sizes
+6.854rem
+4.236rem
+2.618rem
+1.618rem
+1rem
+0.618rem
+
+font-families
+Droid Serif, Droid Sans
+
+colors
+#000000
+#222222
+#333333
+#D4D4D4
+#CC3300
+#BADA55
+#FFFFFF
+plus the shadow for the text
+
+
+***********************************/
+
+*{
+	padding:0;
+	margin:0;
+}
+
+/***********************************
+		DEFAULTS
+***********************************/
+body{
+	background-color: #222;
+}
+h1, h2, h3, h4{
+	font-family:'Droid Serif',serif;   /*you need a font stack here */
+	margin-left:40px;
+}
+h1{
+	color: #FFFFFF;
+	text-shadow: 3px 3px 3px #aaa;
+	max-width:900px;
+    font-size: 6.854rem;
+    padding: 10px 250px;
+	background-image:url('../img/moon-header.jpg');
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 400px;
+	line-height: 1.1;
+	
+	
+}
+h2{
+	color:#CC3300;
+	font-size: 4.236rem;
+	text-shadow: 2px 3px 3px #333333;
+	max-width:900px;
+}
+h3{
+	color:#cc3300;
+	font-size: 2.618rem;
+	text-shadow: 3px 3px 3px #333333;
+	max-width:900px;
+	
+}
+h4{
+	
+}
+p, li, a{
+	font-family: 'Droid Sans',sans-serif;  /*you need a font stack here */
+	max-width:900px;
+	margin-top:10px;
+	margin-left:40px;
+	line-height:22px;
+}
+img{
+	width:90%;
+	max-width: 100%;
+	box-sizing: border-box;
+}
+ul{
+	list-style-type: none;
+	text-align:left;
+	float:left;
+}
+a:link, a:visited{
+	transition: all 0.8s linear;
+    color:#CC3300;
+	
+}
+a:hover, a:active, a:focus{
+	text-decoration: none;
+	color: #BADA55;
+}
+
+/***********************************
+		LAYOUT
+***********************************/
+.wrapper{
+	width:90%;
+	max-width: 1020px;
+	min-width: 400px;
+	margin:0 auto 2.0rem;
+	background-color: #d4d4d4;
+}
+.header{
+	background-color: #000;
+    min-height: 400px;
+}
+.main{
+	
+}
+.footer{
+	background-color: #333333;
+	height:220px;
+}
+
+/***********************************
+		LINKS 
+-for any that are different than the default
+***********************************/
+
+.footer a:link,
+.footer a:visited{
+	display: block;
+	
+}
+.footer a:hover,
+.footer a:active,
+.footer a:focus{
+	
+}
+
+
+/***********************************
+		CONTENT
+***********************************/
+.header h1{
+max-width:900px;
+}
+.main h2{
+	max-width:900px;
+}
+.main h3{
+	max-width:900px;
+}
+.main p{
+	max-width:900px;
+}
+.main img{
+  width:150px;
+  height:150px;
+  border-radius: 30%;
+	/* use border-radius to crop image */
+	/* choose a width percentage for the image too */
+}
+.left{
+	float:left;
+	margin-right:10px;
+	margin-bottom: 10px;
+}
+.footer p{
+    padding-top:175px;
+    margin-left:40px;
+}
+.footer li{
+	width: 45%;
+	float:left;
+	margin-left:50px
+    /* make these 50% the width of the footer */
+}
