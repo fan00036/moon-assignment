@@ -32,24 +32,25 @@ plus the shadow for the text
 }
 
 /***********************************
-		DEFAULTS
+		DEFAULTSß
 ***********************************/
 body{
 	background-color: #222;
 }
-h1, h2, h3, h4{
+ h1,h2, h3, h4{
 	font-family:'Droid Serif',serif;   /*you need a font stack here */
-	margin-left:40px;
+	
 }
 h1{
 	color: #FFFFFF;
 	text-shadow: 3px 3px 3px #aaa;
-	max-width:900px;
-    font-size: 6.854rem;
-    padding: 10px 250px;
+    font-size:6.854rem;
+	padding-left:20%;
+	padding-right: 30%;
+	padding-top: 10px;
 	background-image:url('../img/moon-header.jpg');
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: right top;
 	height: 400px;
 	line-height: 1.1;
 	
@@ -57,12 +58,14 @@ h1{
 }
 h2{
 	color:#CC3300;
+	margin-left:40px;
 	font-size: 4.236rem;
 	text-shadow: 2px 3px 3px #333333;
 	max-width:900px;
 }
 h3{
 	color:#cc3300;
+	margin-left:40px;
 	font-size: 2.618rem;
 	text-shadow: 3px 3px 3px #333333;
 	max-width:900px;
@@ -169,8 +172,9 @@ max-width:900px;
     margin-left:40px;
 }
 .footer li{
-	width: 45%;
+	width: 50%;
 	float:left;
-	margin-left:50px
+	margin-left:0;
+
     /* make these 50% the width of the footer */
 }
